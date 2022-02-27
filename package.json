@@ -1,0 +1,38 @@
+{
+  "name": "fundall_assessment",
+  "version": "1.0.0",
+  "description": "e-wallet api for virtual cards",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "shittu Taofeek",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dayjs": "^1.10.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.2",
+    "generate-unique-id": "^2.0.1",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.4.16",
+    "nodemon": "^2.0.15",
+    "passport": "^0.5.2",
+    "passport-jwt": "^4.0.0",
+    "qrcode": "^1.4.4",
+    "querystring": "^0.2.0",
+    "sequelize": "^6.3.5",
+    "sequelize-cli": "^6.2.0",
+    "shelljs": "^0.8.4",
+    "speakeasy": "^2.0.0",
+    "unique-string": "^2.0.0"
+  }
+}
