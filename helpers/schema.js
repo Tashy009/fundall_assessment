@@ -42,3 +42,28 @@ exports.loginSchema = joi.object().keys({
     .error(new Error("A valid email address is required")),
   password: joi.string().required().error(new Error("Password is required")),
 });
+
+exports.fundWalletSchema = joi.object().keys({
+  amount: joi.number().required().error(new Error("Amount is required")),
+});
+
+exports.performTransactionSchema = joi.object().keys({
+  amount: joi.number().required().error(new Error("Amount is required")),
+  title: joi
+    .string()
+    .required()
+    .error(new Error("Transaction Title is required")),
+  merchant: joi.string().optional(),
+
+  category: joi.string().optional(),
+
+  description: joi.string().optional(),
+});
+
+exports.cardSchema = joi.object().keys({
+  type: joi
+    .string()
+    .valid("lifestyle pro", "lifestyle premium", "lifestyle business")
+    .required()
+    .error(new Error("Type is required")),
+});
